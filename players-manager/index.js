@@ -1,0 +1,1 @@
+var config = require('./src/config/server');

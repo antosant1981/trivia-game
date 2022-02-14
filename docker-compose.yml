@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  game-ui:
+    image: antosan251981/masterrepo:game-ui
+    ports:
+      - "3000:3000"  
+  players-manager:
+    image: antosan251981/masterrepo:players-manager
+    ports:
+      - "8080:8080"
+  pouchdbserver:
+    image: scttmthsn/pouchdb-server
+    ports:
+      - "5984:5984"
+    volumes:
+        - ./dbdata:/opt/pouchdb/data
+volumes: 
+  storage:      
