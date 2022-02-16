@@ -17,7 +17,8 @@ Once the user interface is displayed, it is possible for the player to start ans
 
 Once answered a question, if the answer is correct, the corresponding score is added up to the total game score which appears along with the number of answers provided until that moment.
 Be careful! Once answered a question, it is not possible to change your answer.
-Previuos and Next buttons are available in order to navigate a player's game panel: Next allows a player to go head with the next available question; Previous allows a player to come back and check the previous already answered questions.
+
+*Previuos* and *Next* buttons are available in order to navigate a player's game panel: Next allows a player to go head to the next available question; Previous allows a player to come back and check the previous already answered questions.
 While navigating the Previous button, the current score and the current number of answers provided don't change.      
 At the end of the game, when a player answers the question number 10, three buttons are displayed: 
 - Save ;
@@ -34,14 +35,14 @@ Leaderboard provides a ranking with the top ten players ordered by score, from t
 Play again provides the ability to start a new game, in this case a new set of 10 questions is automatically reloaded. 
 
 ## Architecture and technical aspects
-Trivia game has been designed as a microservice based architecture with:
+Trivia game is a flexible distributed system, based on a microservices architecture with:
 - a front-end component written in *React*, called **game-ui**, responsible to define the user interface and manage the interactive behaviour of the game.
-- a back-end microservice written in *Node.js*, called **players-manager**, responsible to manage all the backend-aspects related to the players world. It is designed to isolate the logic related to the players management into its boundend context and it is designed with the **API first** approach in mind. Indeed, it exposes a complete set of REST APIs wich make simple the intergation with third party systems and applications.      
+- a back-end microservice written in *Node.js*, called **players-manager**, responsible to manage all the backend-aspects related to the players world. It is designed to isolate the logic related to the players management within its boundend context and it is designed with the **API first** approach in mind. Indeed, it exposes a complete set of REST APIs wich make simple the intergation with third party systems and applications.      
 - a data storage component which is a **pouchdb** instance, a NO-SQL lightweight database. Since we don't need a relational data model and players related information can easily be represented and retained in a JSON-like format, this is a really good choise.     
 
 ## Install
 The only requirement for running application is having Docker installed on your host machine.
-Microservices will be instantiated as Docker containers and managed by Docker compose. 
+Microservices will be instantiated as Docker containers and managed as self-contained services by Docker Compose. 
 
 After cloning the project workspace, open a console, navigate the project root and just launch: 
 
@@ -50,3 +51,4 @@ docker-compose up
 ```
 
 Have a look at the console's log in order to check if containers are correctly set-up.
+Enjoy your game!
