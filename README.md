@@ -14,6 +14,7 @@ Once the user interface is displayed, it is possible for the player to start ans
 - 1 easy;
 - 2 medium;
 - 3 hard.
+
 Once answered a question, if the answer is correct, the corresponding score is added up to the total game score which appears along with the number of answers provided until that moment.
 Be careful! Once answered a question, it is not possible to change your answer.
 Previuos and Next buttons are available in order to navigate a player's game panel: Next allows a player to go head with the next available question; Previous allows a player to come back and check the previous already answered questions.
