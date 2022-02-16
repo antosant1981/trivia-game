@@ -37,7 +37,7 @@ Play again provides the ability to start a new game, in this case a new set of 1
 ## Architecture and technical aspects
 Trivia game is a flexible distributed system, based on a microservices architecture with:
 - a front-end component written in *React*, called **game-ui**, responsible to define the user interface and manage the interactive behaviour of the game.
-- a back-end microservice written in *Node.js*, called **players-manager**, responsible to manage all the backend-aspects related to the players world. It is designed to isolate the logic related to the players management within its boundend context and it is designed with the **API first** approach in mind. Indeed, it exposes a complete set of REST APIs wich make simple the intergation with third party systems and applications.      
+- a back-end microservice written in *Node.js*, called **players-manager**, responsible to manage all the back-end aspects related to the players world. It is designed to isolate the players management logic within its boundend context and it is designed with the **API first** approach in mind. Indeed, it exposes a complete set of REST APIs wich make simple the intergation with third party systems and applications.      
 - a data storage component which is a **pouchdb** instance, a NO-SQL lightweight database. Since we don't need a relational data model and players related information can easily be represented and retained in a JSON-like format, this is a really good choise.     
 
 ## Install
