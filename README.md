@@ -31,7 +31,7 @@ Save provides the ability to save a player into a permanent storage. A simple ma
 
 Leaderboard provides a ranking with the top ten players ordered by score, from the greater to the lower one.
 
-Play again provides the ability to start a new game, in this case a new set of 10 questions will be automatically reloaded. 
+Play again provides the ability to start a new game, in this case a new set of 10 questions is automatically reloaded. 
 
 ## Architecture and technical aspects
 Trivia game has been designed as a microservice based architecture with:
@@ -41,7 +41,7 @@ Trivia game has been designed as a microservice based architecture with:
 
 ## Install
 The only requirement for running application is having Docker installed on your host machine.
-Microservices will be instantiated as Docker containers and maaged by Docker compose. 
+Microservices will be instantiated as Docker containers and managed by Docker compose. 
 
 After cloning the project workspace, open a console, navigate the project root and just launch: 
 
