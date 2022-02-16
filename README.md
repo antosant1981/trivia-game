@@ -51,4 +51,6 @@ docker-compose up
 ```
 
 Have a look at the console's log in order to check if containers are correctly set-up.
-Enjoy your game!
+
+
+Have fun!
