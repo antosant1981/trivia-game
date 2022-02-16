@@ -1,10 +1,10 @@
 # Trivia game
 
 # Table of Contents
-1. [Introduction] (#introduction)
+1. [Introduction] (#Introduction)
 2. [User interface and rules](#user-interface-and-rules)
 3. [Architecture and technical aspects](#architecture-and-technical-aspects)
-4. [Install] (#install)
+4. [Install] (#Install)
 
 ## Introduction
 Amazing game based on trivia questions where each player can measure his/her ability against other players (and against himself/herself) and demonstrate his/her knowledge level. There is the possibility for each player to record the best score achieved at the end of each game. A single game consists of a fixed number of 10 questions.  
