@@ -1,13 +1,13 @@
 # Trivia game
 
 # Table of Contents
-1. [Introduction](#Introduction)
-2. [User interface and rules](#User interface and rules)
-3. [Architecture and technical aspects](#Architecture and technical aspects)
-3. [Install](#Install)
+1. [Introduction] (#introduction)
+2. [User interface and rules](#user-interface-and-rules)
+3. [Architecture and technical aspects](#architecture-and-technical-aspects)
+4. [Install] (#install)
 
 ## Introduction
-This is a game based on trivia questions where each player can measure his/her ability against other players (and against himself/herself) and demonstrate his/her knowledge level. There is the possibility for each player to record the best score achieved at the end of each game. A single game consists of a fixed number of 10 questions.  
+Amazing game based on trivia questions where each player can measure his/her ability against other players (and against himself/herself) and demonstrate his/her knowledge level. There is the possibility for each player to record the best score achieved at the end of each game. A single game consists of a fixed number of 10 questions.  
 
 ## User interface and rules
 Once the user interface is displayed, it is possible for the player to start answering. Each question has a score according to its level of difficulty: 
@@ -44,6 +44,8 @@ Microservices will be instantiated as Docker containers and maaged by Docker com
 
 After cloning the project workspace, open a console, navigate the project root and just launch: 
 
-> docker-compose up
+```sh
+docker-compose up
+```
 
 Have a look at the console's log in order to check if containers are correctly set-up.
